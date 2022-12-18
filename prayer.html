@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Prayer Timings</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/15181efa86.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
+    <link rel="stylesheet" href="prayer.css"/>
+  </head>
+
+  <body>
+
+        <!-- START NAV -->
+  <nav class="navbar has-background-black">
+    <div class="container">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="index.html">
+          <!-- choose logo and change-->
+          <img src="amalimages/Untitled design-6.png" alt="Logo">
+        </a>
+        <span class="navbar-burger burger" data-target="navbarMenu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </div>
+      <div id="navbarMenu" class="navbar-menu">
+        <div class="navbar-end">
+          <a class="navbar-item is-active has-text-white" href="index.html">
+            Home
+          </a>
+          <a class="navbar-item has-text-white" href="mosque.html">
+            Mosque Finder
+          </a>
+          <a class="navbar-item has-text-white" href="prayer.html">
+            Prayer Times
+          </a>
+          <a class="navbar-item has-text-white" href="halalFood.html">
+            Halal Food Finder
+          </a>
+          <a class="navbar-item has-text-white" href="stats.html">
+            Learn More
+          </a>
+          <a class="navbar-item has-text-white" href="translate.html">
+            Translate/ترجم
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- END NAV -->
+    <section class="container">
+      <div class="columns is-multiline">
+        <div class="column is-8 is-offset-2 register">
+          <div class="columns">
+            <div class="column left">
+              <h1 class="title is-1">Find your local prayer times</h1>
+                            <!-- Location button -->
+            <div class="field">
+                  <div class="control">
+                    <button id="location" class="button is-block is-info is-fullwidth is-medium">Get my location</button>
+                  </div>
+                </div>
+                <br />
+            </div>
+             
+            <div class="column right has-text-centered">
+
+              <!-- Table with prayer names and times -->
+                    
+                    <table id="prayerTable" class="table table-borderless table-striped table-earning">
+                      <thead>
+                        <tr>
+                          <th>Name</th>
+                          <th>Time</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Fajr</td>
+                          <td id="fajr"></td>
+                        </tr>
+                        <tr>
+                          <td>Sunrise</td>
+                          <td id="sunrise"></td>
+                        </tr>
+                        <tr>
+                          <td>Dhuhr</td>
+                          <td id="dhuhr"></td>
+                        </tr>
+                        <tr>
+                          <td>Asr</td>
+                          <td id="asr"></td>
+                        </tr>
+                        <tr>
+                          <td>Maghrib</td>
+                          <td id="maghrib"></td>
+                        </tr>
+                        <tr>
+                          <td>Isha</td>
+                          <td id="isha"></td>
+                        </tr>
+                      </tbody>
+                    </table>
+              
+            </div>
+          </div>
+        </div>
+        <div class="column is-8 is-offset-2">
+          <br>
+          <nav class="level">   
+            <div class="level-right">
+  
+             <button onclick="window.location.href='index.html'" class="button is-danger"> Back to home page </button>
+              </small>
+                
+              </small>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </section>
+    <footer>    
+      <div class="container">
+      <div class="content has-text-centered">
+      <a href="https://www.freepik.com/vectors/ritual">Ritual vector created by Creative_hat - www.freepik.com</a>
+      </div>
+      </div>
+    </footer>
+  </body>
+<script src="prayer.js"></script>
+
+
+   <style>
+   
+  </style>
+
+</html>

@@ -1,0 +1,147 @@
+<!--Translate to Arabic-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Syrian Refugee Website</title>
+  <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
+  <script src="https://kit.fontawesome.com/7dc3015a44.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- START NAV -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="index.html">
+          <!-- choose logo and change-->
+          <img src="amalimages/Untitled design-6.png" alt="Logo">
+        </a>
+        <span class="navbar-burger burger" data-target="navbarMenu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </div>
+      <div id="navbarMenu" class="navbar-menu">
+        <div class="navbar-end">
+          <a class="navbar-item" href="index.html">
+            Home
+          </a>
+          <a class="navbar-item" href="mosque.html">
+            Mosque Finder
+          </a>
+          <a class="navbar-item" href="prayer.html">
+            Prayer Times
+          </a>
+          <a class="navbar-item" href="halalFood.html">
+            Halal Food Finder
+          </a>
+          <a class="navbar-item" href="stats.html">
+            Learn More
+          </a>
+          <a class="navbar-item" href="translate.html">
+            Translate/ترجم
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- END NAV -->
+  
+
+  <div class="container">
+    <div class="section">
+      <div class="columns">
+        <div class="column has-text-centered">
+          <section class="hero is-small is-info">
+  <div class="hero-body">
+    <a id="translateLink" href="index.html">انقر للعودة إلى الصفحة الرئيسية (Click to return to home page)</a>
+  </div>
+</section>
+          <br>
+          <h1 id="smallTitle" style="color: ghostwhite;">كيف تترجم هذا الموقع إلى اللغة العربية (How to translate this site into Arabic)</h1><br>
+          <h1 class="tutorial">1. انقر بزر الماوس الأيمن فوق أي جزء من الموقع</h1>
+          <h1 class="translation">(Right-click any part of the website)</h1>
+          <br />
+          <h1 class="tutorial">2. انقر على "Translate to English" في القائمة المنبثقة</h1>
+<h1 class="translation">(Click "Translate to English" in the pop-up menu)</h1>
+          <br />
+          <img class="tutorialImage" src="amalimages/tutorial2.jpg" />
+          <br /><br />
+          <h1 class="tutorial">3. في الزاوية اليمنى العليا من الشاشة ، انقر فوق النقاط الثلاث</h1>
+          <h1 class="translation">(In the top right corner of the screen, click on the three dots)</h1>
+          <br />
+          <img class="tutorialImage" src="amalimages/tutorial3.jpg" />
+          <br /><br />
+          <h1 class="tutorial">4. "Choose another language" انقر فوق
+          <h1 class="translation">(Click "Choose another language")</h1>
+          <br />
+          <img class="tutorialImage" src="amalimages/tutorial4.jpg" />
+          <br /><br />
+          <h1 class="tutorial">5. "English" انقر فوق
+          <h1 class="translation">(Click "English")</h1>
+          <br />
+          <img class="tutorialImage" src="amalimages/tutorial5.jpg" />
+          <br /><br />
+          <h1 class="tutorial">6. "Arabic" حدد</h1>
+          <h1 class="translation">(Select "Arabic")</h1>
+          <br />
+          <img class="tutorialImage" src="amalimages/tutorial6.jpg" />
+          <br /><br />
+          <h1 class="tutorial">7. انقر على "Translate" وبذلك تكون قد انتهيت!</h1>
+          <h1 class="translation">(Click "Translate" and you're done!)</h1>
+          <br />
+          <img class="tutorialImage" src="amalimages/tutorial7.jpg" />
+        </div>
+      </div>
+      <div id="app" class="row columns is-multiline">
+        <div v-for="card in cardData" key="card.id" class="column is-4">
+        </div>
+        <div v-for="card in cardData" key="card.id" class="column is-4">
+        
+         
+              </div>
+            </div>
+          </div>
+        </div>
+
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  <footer class="footer">
+    <div class="container">
+      <div class="content has-text-centered">
+        <div class="soc">
+          <a href="#"><i class="fa fa-github-alt fa-lg" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-youtube fa-lg" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
+        </div>
+        <p>
+          <strong>Bulma</strong> by <a href="http://jgthms.com">Jeremy Thomas</a>.
+          The source code is licensed <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. <br>
+        </p>
+      </div>
+      <div id="attribution" class="content has-text-centered">
+      <p>Icons made by <a href="https://www.flaticon.com/authors/freepik">Freepik</a> from <a href="www.flaticon.com"> www.flaticon.com </a></p>
+    </div>
+  </footer>
+
+  <script src="cardsData.js"></script>
+
+</body>
+
+</html>
+
